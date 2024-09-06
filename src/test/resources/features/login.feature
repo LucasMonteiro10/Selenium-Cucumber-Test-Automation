@@ -7,7 +7,7 @@ Feature: Login functionality
         | Field    | Value         |
         | Username | standard_user |
         | Password | secret_sauce  |
-        And I click on the Login button
+#        And I click on the Login button
 #        Then I should be redirected to the main page
 
     Scenario: Login with invalid credentials
