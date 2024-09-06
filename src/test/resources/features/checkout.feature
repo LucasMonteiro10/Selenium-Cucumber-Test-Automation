@@ -4,6 +4,7 @@ Feature: Checkout Process
         Given I have at least one product in the cart
         When I click the "Checkout" button
         And I fill the information table with the following values
+        | Field           | Value   |
         | First Name      | Matt    |
         | Last Name       | Murdock |
         | Zip/Postal Code | Matt    |                
