@@ -7,10 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.swaglabs.pages.LoginPage;
+import com.swaglabs.pages.ProductsPage;
 import com.swaglabs.utils.Hooks;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginSteps {
@@ -30,7 +33,7 @@ public class LoginSteps {
 	}
 	
 	@When("I enter the following values on login form")
-	public void i_enter_the_following_values_on_login_form(DataTable dataTable){
+	public void i_enter_the_following_values_on_login_form(DataTable dataTable) {
 		loginPage.waitForLoginPageIsFullyLoaded();
 		
 		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
@@ -52,4 +55,9 @@ public class LoginSteps {
 		}
 	}
 	
+    @And("I click on the Login button")
+	public void i_click_on_the_login_button() {
+    	loginPage.clickOnLoginButton();
+    }
+    
 }

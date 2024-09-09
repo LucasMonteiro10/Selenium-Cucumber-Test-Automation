@@ -1,5 +1,10 @@
 package com.swaglabs.locators;
 
-public class ProductsLocators {
+import org.openqa.selenium.By;
 
+public class ProductsLocators {
+	
+	public static By assertIsOnProductsPage() {
+		return By.xpath("//span[text()[contains(.,'Products')]]");
+	}
 }

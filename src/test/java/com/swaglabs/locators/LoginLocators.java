@@ -8,4 +8,12 @@ public class LoginLocators {
 		return By.id("user-name");
 	}
 
+	public static By passwordField() {
+		return By.id("password");
+	}
+
+	public static By loginButton() {
+		return By.id("login-button");
+	}
+
 }

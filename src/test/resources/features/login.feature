@@ -7,8 +7,8 @@ Feature: Login functionality
         | Field    | Value         |
         | Username | standard_user |
         | Password | secret_sauce  |
-#        And I click on the Login button
-#        Then I should be redirected to the main page
+        And I click on the Login button
+        Then I should be redirected to the products page
 
     Scenario: Login with invalid credentials
         Given I am on the login page

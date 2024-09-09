@@ -33,8 +33,15 @@ public class LoginPage {
 	}
 
 	public void fillPassword(String value) {
-		// TODO Auto-generated method stub
+		wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocators.passwordField()));
 		
+		driver.findElement(LoginLocators.passwordField()).sendKeys(value);;
+	}
+
+	public void clickOnLoginButton() {
+		wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocators.loginButton()));
+		
+		driver.findElement(LoginLocators.loginButton()).click();
 	}
 	
 }
