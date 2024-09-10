@@ -1,6 +1,5 @@
 Feature: Login functionality
 
-		@working
     Scenario: Login with valid credentials
         Given I am on the login page
         When I enter the following values on login form
@@ -10,9 +9,10 @@ Feature: Login functionality
         And I click on the Login button
         Then I should be redirected to the products page
 
+		@working
     Scenario: Login with invalid credentials
         Given I am on the login page
-        When I enter the following values on login credentials form
+        When I enter the following values on login form
         | Field    | Value          |
         | Username | invalid_user   |
         | Password | wrong_password |        

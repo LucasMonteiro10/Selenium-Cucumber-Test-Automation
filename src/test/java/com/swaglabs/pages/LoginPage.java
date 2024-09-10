@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.swaglabs.locators.LoginLocators;
+import com.swaglabs.locators.ProductsLocators;
 
 public class LoginPage {
 	private WebDriver driver;
@@ -42,6 +43,15 @@ public class LoginPage {
 		wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocators.loginButton()));
 		
 		driver.findElement(LoginLocators.loginButton()).click();
+	}
+
+	public void seeErrorMessage(String value) {
+        try {
+            wait.until(ExpectedConditions.presenceOfElementLocated(LoginLocators.errorMessage(value)));
+            System.out.println("Element is present.");
+        } catch (Exception e) {
+            System.out.println("Element is not present.");
+        }
 	}
 	
 }

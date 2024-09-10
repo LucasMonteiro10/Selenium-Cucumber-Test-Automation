@@ -16,4 +16,8 @@ public class LoginLocators {
 		return By.id("login-button");
 	}
 
+	public static By errorMessage(String value) {
+		return By.xpath(String.format("//h3[text() [contains(.,'%s')]]", value));
+	}
+
 }

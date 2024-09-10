@@ -60,4 +60,9 @@ public class LoginSteps {
     	loginPage.clickOnLoginButton();
     }
     
+    @Then("I should see an error message {string}")
+    public void i_should_see_an_error_message(String message) {
+    	loginPage.seeErrorMessage(message);
+    }
+    
 }
