@@ -61,7 +61,7 @@ src
         │   ├── productSorting.feature
         │   └── shoppingCart.feature
         └── media
-            └── XXX.png
+            └── SwagLabsHomePagePic.png
 ```
 
 Esta estrutura segue uma organização comum para projetos de automação de testes utilizando Java, Selenium, Cucumber e Page Object Model, onde:
@@ -74,4 +74,4 @@ Esta estrutura segue uma organização comum para projetos de automação de tes
 
 ## Swag Labs Home Page
 
-![Imagem da Tricentis Home Page](src/test/resources/media/tricentishome.png)
+![Imagem da Home Page do Swag Labs](src/test/resources/media/SwagLabsHomePagePic.png)
